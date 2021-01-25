@@ -1,0 +1,147 @@
+[debug] [2021-01-25T13:42:24.983Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T13:42:24.986Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-25T13:42:24.987Z] CLI Version:   9.2.2
+[debug] [2021-01-25T13:42:24.987Z] Platform:      win32
+[debug] [2021-01-25T13:42:24.987Z] Node Version:  v15.3.0
+[debug] [2021-01-25T13:42:24.989Z] Time:          Mon Jan 25 2021 19:12:24 GMT+0530 (India Standard Time)
+[debug] [2021-01-25T13:42:24.989Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T13:42:24.989Z] 
+[debug] [2021-01-25T13:42:24.993Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-01-25T13:42:25.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-25T13:42:25.028Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hp\unsplash-bolt-interview
+
+[debug] [2021-01-25T13:42:25.822Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-01-25T13:42:25.822Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-01-25T13:42:44.018Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-25T13:42:44.018Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-25T13:42:44.168Z] <<< HTTP RESPONSE 200 {"date":"Mon, 25 Jan 2021 13:42:44 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:42:44.178Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"bolt-unsplash","name":"bolt-unsplash"}
+[debug] [2021-01-25T13:42:45.623Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 25 Jan 2021 13:42:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1309","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:42:45.625Z] > refreshing access token with scopes: []
+[debug] [2021-01-25T13:42:45.625Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-25T13:42:45.755Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 25 Jan 2021 13:42:45 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:42:45.764Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7711349291456030572 [none]
+[debug] [2021-01-25T13:42:47.198Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7711349291456030572 200
+[debug] [2021-01-25T13:42:47.198Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7711349291456030572 {"name":"operations/cp.7711349291456030572"}
+[debug] [2021-01-25T13:42:47.699Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-01-25T13:42:47.699Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7711349291456030572 [none]
+[debug] [2021-01-25T13:42:49.123Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7711349291456030572 200
+[debug] [2021-01-25T13:42:49.123Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7711349291456030572 {"name":"operations/cp.7711349291456030572","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"441121295448","projectId":"bolt-unsplash","lifecycleState":"ACTIVE","name":"bolt-unsplash","createTime":"2021-01-25T13:42:45.545Z"}}
+[debug] [2021-01-25T13:42:49.129Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-25T13:42:49.129Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-25T13:42:49.274Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 25 Jan 2021 13:42:49 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:42:49.283Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/bolt-unsplash:addFirebase  
+ 
+[debug] [2021-01-25T13:42:52.907Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 25 Jan 2021 13:42:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:42:52.908Z] > refreshing access token with scopes: []
+[debug] [2021-01-25T13:42:52.908Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-25T13:42:53.029Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 25 Jan 2021 13:42:53 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:42:53.037Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk [none]
+[debug] [2021-01-25T13:42:54.320Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk 200
+[debug] [2021-01-25T13:42:54.320Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk {"name":"operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk"}
+[debug] [2021-01-25T13:42:54.820Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-01-25T13:42:54.821Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk [none]
+[debug] [2021-01-25T13:42:55.915Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk 200
+[debug] [2021-01-25T13:42:55.916Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk {"name":"operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk"}
+[debug] [2021-01-25T13:42:56.916Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-01-25T13:42:56.917Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk [none]
+[debug] [2021-01-25T13:42:58.026Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk 200
+[debug] [2021-01-25T13:42:58.027Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk {"name":"operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk"}
+[debug] [2021-01-25T13:43:20.351Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-01-25T13:43:20.352Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk [none]
+[debug] [2021-01-25T13:43:21.429Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk 200
+[debug] [2021-01-25T13:43:21.430Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk {"name":"operations/workflows/NzM5M2I3MzAtNjliYi00MWE4LWEwMTUtZjYxMTA2ZjlkM2Rk","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"bolt-unsplash","projectNumber":"441121295448","displayName":"bolt-unsplash","name":"projects/bolt-unsplash","resources":{"hostingSite":"bolt-unsplash"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: bolt-unsplash
+[info]    - Project Name: bolt-unsplash
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/bolt-unsplash/overview
+[info] i  Using project bolt-unsplash (bolt-unsplash) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-01-25T13:43:33.489Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T13:43:33.493Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-25T13:43:33.493Z] CLI Version:   9.2.2
+[debug] [2021-01-25T13:43:33.493Z] Platform:      win32
+[debug] [2021-01-25T13:43:33.494Z] Node Version:  v15.3.0
+[debug] [2021-01-25T13:43:33.495Z] Time:          Mon Jan 25 2021 19:13:33 GMT+0530 (India Standard Time)
+[debug] [2021-01-25T13:43:33.496Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T13:43:33.496Z] 
+[debug] [2021-01-25T13:43:33.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-25T13:43:33.505Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hp\unsplash-bolt-interview
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-01-25T13:43:47.570Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-25T13:43:47.570Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-25T13:43:47.743Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 25 Jan 2021 13:43:47 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:43:47.753Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"bolt-unsplash","name":"bolt-unsplash"}
+[debug] [2021-01-25T13:43:49.036Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 25 Jan 2021 13:43:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1207","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T13:43:49.036Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-01-25T13:43:49.155Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:376:20)
+    at Request.EventEmitter.emit (node:domain:470:12)
+    at Request.<anonymous> (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:376:20)
+    at Request.EventEmitter.emit (node:domain:470:12)
+    at IncomingMessage.<anonymous> (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:482:28)
+    at IncomingMessage.emit (node:events:388:22)
+    at IncomingMessage.EventEmitter.emit (node:domain:470:12)
+    at endReadableNT (node:internal/streams/readable:1294:12)
+    at processTicksAndRejections (node:internal/process/task_queues:80:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID bolt-unsplash. Please try again with a unique project ID.
